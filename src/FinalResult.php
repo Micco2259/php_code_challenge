@@ -50,6 +50,8 @@ class FinalResult
                 }
             }
 
+            fclose($file);
+
             return [
                 "filename" => basename($filePath),
                 "document" => $file,
